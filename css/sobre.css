@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-family: 'Merriweather Sans', sans-serif;
+    padding: 15px;
+    background-color: #444444;
+    display: grid;
+    grid-template-columns: 250px 100px 100px;
+}
+
+header h1 {
+    color: white;
+    font-size: 20px;
+}
+
+.links {
+    margin-top: 2px;
+    font-size: 18px;
+    color: aliceblue;
+    text-decoration: none
+}
+
+header a:hover {
+    color: #6C4FBB;
+}
+
+#content {
+    width: 100%;
+    height: 15%;
+    background-color: #6C4FBB;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#content img {
+    width: 50%;
+    margin: 15% 0 10% 20%;
+    justify-self: left;
+    border-radius: 30%;
+}
+
+#content p {
+    font-family: 'Lato-bold', sans-serif;
+    color: white;
+    font-size: 25px;
+    margin: 10% 0 10% 40%;
+    padding: 0 0;
+    text-align: left;
+}
+
+.tecnologias {
+    list-style-type: none;
+    margin: 5% 40% 0 20%;
+    display: inline-flex;
+}
+
+.title {
+    margin: 2% 0 0 20%;
+    font-size: 50px;
+    color: #444444;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+.tecnologias .list {
+    margin: 0 20% 10% 5%;
+}
+
+.list p {
+    font-family: 'Roboto-bold', sans-serif;
+    font-size: 16px;
+    margin: 5% 0 10% 0;
+    text-align: center;
+}
+
+footer {
+    background-color: #444444;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    font-family: 'Merriweather Sans', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: #6C4FBB;
+}

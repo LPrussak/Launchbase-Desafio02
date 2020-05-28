@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-family: 'Merriweather Sans', sans-serif;
+    padding: 15px;
+    background-color: #444444;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+}
+
+header h1 {
+    color: white;
+    font-size: 20px;
+}
+.links {
+    margin-top: 2px;
+    font-size: 18px;
+    color: aliceblue;
+    text-decoration: none
+}
+
+header a:hover {
+    font-family: 'Merriweather Sans', sans-serif;
+    color: #6C4FBB;
+}
+
+body {
+    background-color: #CDCECC;
+}
+
+.cursos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 5% 5% 0 5%;
+}
+
+.card {
+    background-color: white;
+    margin: 5%;
+    padding: 30% 5%;
+    box-shadow: 5px 5px 10px #8b8686;
+    text-align: center;
+    font-family: 'Roboto Regular', sans-serif;
+}
+
+.card ul {
+    margin-top: 3%;
+    list-style-type: none;
+}
+
+/* MODAL */
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.modal {
+    background-color: #444444;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+/* Botão fechar */
+
+.modal .close-modal {
+    color: white;
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    cursor: pointer;
+}
+
+/* Botão maximizar */
+
+.modal .maximizar {
+    color: white;
+    position: absolute;
+    right: 40px;
+    top: 3px;
+    ;
+    cursor: pointer;
+}
+
+/* Botão minimizar*/
+
+.modal .minimizar {
+    color: white;
+    position: absolute;
+    right: 70px;
+    top: 2px;
+    cursor: pointer;
+}
+
+/* Modal active */
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 5%;
+}
+
+.modal.maximize {
+    background-color: #444444;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    /* position: relative; */
+}
+
+.modal.minimize {
+    background-color: #444444;
+    width: 90%;
+    height: 90%;
+    margin: 3vh auto;
+    position: relative;
+}
+
+.modal-content {
+    overflow-x: hidden;
+}
